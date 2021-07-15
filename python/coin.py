@@ -12,6 +12,6 @@ for _ in range(N):
 
 for i in range(10000):
     for index in range(len(array)):
-        dp[i+array[index]] = min(dp[index] + 1,dp[index])
+        dp[i+array[1]] = min(dp[index] + 1,dp[index])
 
 
