@@ -36,14 +36,27 @@ public class Baek_1916 {
             x = Integer.parseInt(st.nextToken());
             y = Integer.parseInt(st.nextToken());
             cost = Integer.parseInt(st.nextToken());
-            arr[x-1][y-1] = cost;
+            if (arr[x - 1][y - 1] > cost) {
+                arr[x-1][y-1] = cost;
+            }
+
         }
 
         StringTokenizer st = new StringTokenizer(br.readLine());
         start = Integer.parseInt(st.nextToken())-1 ;
         end = Integer.parseInt(st.nextToken())-1 ;
+        for (int i = 0; i < N; i++) {
+            if (i != start) {
+                visited[i] = Integer.MAX_VALUE;
+            }
+            else{
+                visited[i] = 0;
+            }
+
+        }
         dijkstra(start, end);
         System.out.println(visited[end]);
+
     }
 
     static class Node implements Comparable<Node>{
@@ -68,20 +81,12 @@ public class Baek_1916 {
         PriorityQueue<Node> priorityQueue = new PriorityQueue<>();
 
         priorityQueue.add(new Node(x, 0));
-        for (int i = 0; i < N; i++) {
-            if (i != start) {
-                visited[i] = Integer.MAX_VALUE;
-            }
-            else{
-                visited[i] = 0;
-            }
 
-        }
 
         while (!priorityQueue.isEmpty()) {
             Node node = priorityQueue.poll();
             for (int i = 0; i < N; i++) {
-                if (i != N && visited[i] > node.cost + arr[node.loc][i]) {
+                if (arr[node.loc][i] != Integer.MAX_VALUE && visited[i] > node.cost + arr[node.loc][i]) {
                     visited[i] = node.cost +arr[node.loc][i];
                     priorityQueue.add(new Node(i,node.cost + arr[node.loc][i]));
                 }
