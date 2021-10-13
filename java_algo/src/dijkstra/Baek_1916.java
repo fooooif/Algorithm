@@ -44,6 +44,7 @@ public class Baek_1916 {
 
         StringTokenizer st = new StringTokenizer(br.readLine());
         start = Integer.parseInt(st.nextToken())-1 ;
+<<<<<<< Updated upstream
         end = Integer.parseInt(st.nextToken())-1 ;
         for (int i = 0; i < N; i++) {
             if (i != start) {
@@ -54,6 +55,9 @@ public class Baek_1916 {
             }
 
         }
+=======
+        end = Integer.parseInt(qwerqwerst.nextToken())-1 ;
+>>>>>>> Stashed changes
         dijkstra(start, end);
         System.out.println(visited[end]);
 
