@@ -1,6 +1,6 @@
 package dfs_bfs;
 
-class Pg_단어변환 {
+class Pg_단어변 {
     static boolean[] visited;
     static boolean[][] graph;
     static int answer ;
