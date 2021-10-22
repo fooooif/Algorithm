@@ -1,4 +1,4 @@
-package dijkstra.edit_distance;
+package dp.edit_distance;
 
 import java.io.BufferedReader;
 import java.io.IOException;

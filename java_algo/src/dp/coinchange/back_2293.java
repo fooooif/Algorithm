@@ -1,4 +1,4 @@
-package dijkstra.coinchange;
+package dp.coinchange;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package dijkstra.longnum;
+package dp.longnum;
 
 import java.io.BufferedReader;
 import java.io.IOException;
