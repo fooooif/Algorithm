@@ -1,5 +1,8 @@
+import java.math.BigInteger;
 import java.util.Arrays;
 import java.util.Comparator;
+
+import static java.math.BigInteger.*;
 
 public class StringLengthSort {
     public static void main(String[] args) {
@@ -23,12 +26,29 @@ public class StringLengthSort {
 //        for (String s1 : a) {
 //            System.out.println(s1);
 //        }
-        String aa = "";
+//        String aa = "";
+//
+//        String b = "b";
+//
+//        aa = b;
+//        System.out.println(aa);
 
-        String b = "b";
+//        int n = 100;
+//
+//        long[] dp = new long[n + 1];
+//        dp[0] = 1;
+//        for (int i = 1; i < n+1; i++){
+//            dp[i] = dp[i-1] * i;
+//        }
 
-        aa = b;
-        System.out.println(aa);
+//        BigInteger[] dp = new BigInteger[101];
+//        int n= 100;
+//        dp[0] = valueOf(1);
+//        for(int i = 1 ; i < n+1; i++){
+//            dp[i] = valueOf(dp[i - 1]. * i);
+//        }
+
+
 
 
     }
