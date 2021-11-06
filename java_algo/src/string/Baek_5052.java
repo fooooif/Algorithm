@@ -3,8 +3,7 @@ package string;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
-import java.util.Comparator;
+import java.util.*;
 
 public class Baek_5052 {
     static int t;
@@ -21,14 +20,8 @@ public class Baek_5052 {
             for(int j = 0; j< n; j++){
                 arr[j] = br.readLine();
             }
-            Comparator<String> c = new Comparator<String>() {
-                @Override
-                public int compare(String o1, String o2) {
-                    return Integer.compare(o1.length(), o2.length());
-                }
-            } ;
-
-            Arrays.sort(arr, c);
+            int[] arrr =  new int[3];
+            Arrays.sort(arrr);
             boolean answer = false;
             for(int a = 0 ; a<n; a++){
                 for(int b = a+1 ; b<n; b++){
