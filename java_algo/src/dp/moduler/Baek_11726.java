@@ -1,4 +1,4 @@
-package dp;
+package dp.moduler;
 
 import java.io.BufferedReader;
 import java.io.IOException;
