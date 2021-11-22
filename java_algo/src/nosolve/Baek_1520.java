@@ -91,5 +91,42 @@
 //                }
 //            }
 //        }
+<<<<<<< Updated upstream
 //    }
 //}
+=======
+        //1년동안 열심히 한것
+
+    }
+    static class Node{
+        int x;
+        int y;
+        Node(int x,int y){
+            this.x = x;
+            this.y = y;
+
+        }
+    }
+
+//    static void dfs(int x, int y) {
+//
+//
+//        if (x == arr.length - 1 && y == arr.length - 1) {
+//            return;
+//        }
+//        for (int i = 0; i < dir.length; i++) {
+//            int x_x = x + dir[i][0];
+//            int y_y = y + dir[i][1];
+//            if (x_x > -1 && x_x < M && y_y > -1 && y_y < N) {
+//                if (arr[x_x][y_y] < arr[x][y]) {
+//                    if (visited[x_x][y_y] == true) {
+//
+//                    }
+//                    dp[]
+//                    dfs(x_x, y_y);
+//                }
+//            }
+//        }
+//    }
+}
+>>>>>>> Stashed changes
