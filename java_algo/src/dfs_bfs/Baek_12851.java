@@ -7,6 +7,8 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
+
+// 중복해서 갈 수 있다.
 public class Baek_12851 {
     public static void main(String[] args) throws IOException {
 
@@ -23,11 +25,11 @@ public class Baek_12851 {
         }
         Queue<Node> queue = new LinkedList<>();
         queue.add(new Node(N, 0));
-        visited[N] = true;
         int count = 0;
         int cost = 100000;
         while (!queue.isEmpty()) {
             Node poll = queue.poll();
+            visited[poll.n] = true;
             if (cost < poll.cost) {
                 break;
             }
@@ -36,23 +38,25 @@ public class Baek_12851 {
                 cost = poll.cost;
             }
 
+
+
             if (poll.n + 1 > -1 && poll.n + 1 < 100001) {
                 if (visited[poll.n + 1] == false) {
-                    visited[poll.n+1] = true;
+
                     queue.add(new Node(poll.n + 1, poll.cost + 1));
 
                 }
 
             }if (poll.n -1 > -1 && poll.n -1 < 100001) {
                 if (visited[poll.n - 1] == false) {
-                    visited[poll.n - 1] = true;
+
                     queue.add(new Node(poll.n -1, poll.cost + 1));
                 }
 
             }
             if (poll.n*2 > -1 && poll.n*2 < 100001) {
                 if(visited[poll.n * 2] == false){
-                    visited[poll.n * 2] = true;
+
                     queue.add(new Node(poll.n *2, poll.cost + 1));
                 }
 
@@ -62,8 +66,8 @@ public class Baek_12851 {
 //        가장 빠른시간...?
 
         System.out.println(cost);
-        System.out.println(count);
     }
+
     static class Node{
         int n;
         int cost;
