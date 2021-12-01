@@ -19,6 +19,7 @@ public class StringLengthSort {
         for (AA aa : list) {
             System.out.println(aa.a);
         }
+
     }
 
     static class AA {
