@@ -1,3 +1,5 @@
+package basic;
+
 public class Find_decimal {
     static boolean[] prime;
 

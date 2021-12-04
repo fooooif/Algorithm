@@ -1,3 +1,5 @@
+package basic;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -28,7 +30,7 @@ public class sol_4 {
         }
     }
 
-    static void dfs(boolean[][] visited, int[][] arr,int x,int) {
+    static void dfs(boolean[][] visited, int[][] arr,int x) {
 
     }
 }
